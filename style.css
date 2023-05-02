@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600&family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@500&family=Londrina+Solid&family=Oswald&family=Poppins:wght@600&family=Roboto:wght@500&family=Signika+Negative:wght@500&family=Silkscreen&family=Telex&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+/* --------HOME ----------- */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/BG.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.container{
+    padding: 10px 10px;
+}
+
+nav {
+    font-family: 'Francois One', 'Bebas Neue', 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: flex;
+    margin: 0 100px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+nav i{
+    display: none;
+}
+.logo {
+    cursor: pointer;
+    width: 150px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+  
+  }
+  
+nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .headertext {
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 40px;
+
+}
+
+.headertext h1 {
+    font-family: 'Poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    margin-top: 0px;
+    display: absolute;
+    white-space: nowrap;
+    margin-left: 14px;
+}
+
+.headertext h1 span{
+    color: #cb0c0c;
+    font-size: 80px;
+    font-family: 'Oswald';
+}
+
+.headertext p{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 80px;
+    font-family: 'Alumni sans','Bebas Neue','Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    margin-left: -18px;
+  }
+
+  .headertext p span{
+    font-size: 150px;
+    font-family: 'Bebas Neue','Courier New', Courier, monospace;
+    color: rgb(255, 177, 33);
+  }
+
+
+/* --------ABOUT ME----------- */
+#about .container{
+    background-color: #090909;
+
+}
+#about{
+    padding: 180px 0px;
+    color: white;
+}
+
+.row{
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-colum1{
+    flex-basis: 30%;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.about-colum1 img{
+    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-colum2{
+    flex-basis: 60%;
+    margin-top: 30px;
+}
+.about-colum2 .Ab{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+    font-size: 50px;
+}
+.about-colum2 p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 82%;
+    font-size: 15px;
+    font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tabtitle {
+    display: flex;
+    font-size: 15px;
+    margin-top: 14px;
+    cursor: pointer;
+    width: 70%;
+}
+.about-colum2 .tablinks{
+    font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    position: relative;
+    font-weight: bolder;
+    color: rgb(241, 242, 213);
+
+}
+.tablinks::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+  
+  }
+
+.tablinks.active-link::after {
+    width: 15%;
+  }
+
+
+.tabcont ul li {
+    list-style: none; 
+    margin: 20px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.tabcont ul li span {
+
+    font-size: 15px;
+    letter-spacing: 0.55px;
+    color: #e07988;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#education{
+    margin-left: 35%;
+}
+.tabcont {
+    margin-top: 20px;
+    display: none;
+    transition: all 0.5s ease-in-out; /* added transition property */
+}
+
+.tabcont.active-tab{
+    display: block;
+}
+
+
+/* ------------My works--------------- */
+#portfolio{
+    padding: 20px 0;
+}
+
+
+.worklist.graphics-designing{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    
+}
+.work img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+.worklist.web-designing{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    
+}
+.title1 { 
+    margin-top: -150px;
+    font-size: 80px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+.buttons button{
+    padding: 20px;
+    margin-left: -80%;
+    text-indent: 10px;
+}
+  
+.category-button {
+    cursor : pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  
+  .toggle-icon {
+    display: none;
+
+    margin-left: 150rem;
+    margin-top : -20px;
+  }
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Layer{
+    cursor: pointer;    
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(92, 19, 19));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out ;
+}
+.Layer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.Layer h3{
+    font-size: 30px;
+    font-family: 'Bebas Neue','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .Layer{
+    height: 100%;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modal-image {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    margin-top: 80px;
+    max-height: 80%;
+}
+
+#close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.active {
+    background-color: rgb(57, 57, 57);
+    color: #fff;
+    height: 60px;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.see-more {
+    text-decoration: none;
+    display: block;
+    margin-top: 300px;
+    padding: 10px;
+    width: 20%;
+    font-size: 12px;
+    color: white;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(26, 25, 25);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .see-more:hover {
+    background-color: rgba(128, 128, 128, 0.7);
+  }
+
+  .worklist.web-designing {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.worklist.web-designing .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    grid-column: 1 / span 1;
+}
+
+.worklist.web-designing .work-info {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(19, 18, 18);
+}
+
+.worklist.web-designing .work-info h3 {
+    margin: 10;
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+}
+
+
+.worklist.web-designing .work-info p {
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+
+iframe {
+    width: 100%;
+    height: 800px;
+}
+
+.worklist.python-projects  .work .container-s{
+    position: relative;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(22, 21, 21) 0%, rgb(15, 13, 13) 99.4%);    
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 3px 10px black;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+.worklist.python-projects .work h3{ 
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+    font-weight: bolder;
+
+}
+
+.worklist.python-projects .work h3 .linkh{ 
+    display: block; 
+    position: absolute; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translate(-60%); 
+  
+}
+
+
+
+/* ----------For contact me-------------- */
+
+/* ----------For responsive---------- */
+
+nav .bars{
+    display: none;
+}
+nav .mark{
+    display: none;
+}
+@media only screen and (max-width: 600px)
+{
+    #header{
+        background-image: url(images/PhoneBG.png);
+    }
+
+    .headertext {
+        margin-top: 120%;
+        margin-left: 2%;
+        font-size: 10px;
+        margin-bottom: -120px;
+    }
+    .headertext h1 {
+        font-size: 23px;
+        display: absolute;
+        white-space: nowrap;
+    }
+    .headertext p span{
+
+        font-size: 60px;
+        font-family: 'Bebas Neue','Courier New', Courier, monospace;
+        color: rgb(255, 177, 33);
+    }
+    .headertext h1 span{
+        color: #cb0c0c;
+        font-size: 35px;
+        font-family: 'Oswald';
+    }
+
+    nav {
+        font-family: 'Francois One', 'Bebas Neue', 'Courier New', Courier, monospace;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 100px;
+    }
+    
+    .logo-container {
+        position: absolute;
+        top: 10px;
+        left: 3px;
+    }
+    
+    .logo {
+        cursor: pointer;
+        width: 100px;
+    }
+    nav i{ 
+        display: block;
+        font-size: 17px;
+    }
+
+    nav ul{
+        background: rgb(255, 118, 80);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 150px;
+        height: 100vh;
+        padding: 10px;
+        z-index: 2;
+    }
+    nav .mark{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        transform: translateY(40px);
+        margin: 30px;
+    }
+
+    nav ul .mark{
+        position: absolute;
+        top : 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+    nav .bars{
+        display: block;
+        margin-left: 80%;
+        transform: translate(60px,16px);
+    }
+
+    .about-colum1 img{
+        box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
+        width: 300%;
+        border-radius: 10px;
+        margin-left: -90px;
+    }
+    .about-colum2{
+        flex-basis: 60%;
+        margin-top: 30px;
+    }
+    .about-colum2 .Ab{
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .about-colum2 p{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 150%;
+        font-size: 13px;
+        font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .about-colum2 .tablinks{
+        font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        position: relative;
+        font-weight: bolder;
+        color: rgb(241, 242, 213);
+    
+    }
+    .tablinks::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.7s;
+      
+      }
+    
+    .tablinks.active-link::after {
+        width: 30%;
+      }
+    
+    
+    .tabcont ul li {
+        list-style: none; 
+        margin: 20px;
+        width: 300%;
+        font-size: 16px;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    
+    .tabcont ul li span {
+    
+        font-size: 15px;
+        letter-spacing: 0.55px;
+        color: #e07988;
+        font-family:  'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+    }
+    
+    #education{
+        margin-left: 30%;
+    }
+    .tabcont {
+        margin-top: 20px;
+        display: none;
+        transition: all 0.5s ease-in-out; /* added transition property */
+    }
+    
+    .tabcont.active-tab{
+        display: block;
+    }
+    
+    .title1 { 
+        margin-top: -150px;
+        font-size: 40px;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .category-button {
+        cursor : pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        transform: translateX(50px);
+        border: none;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      #modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    #modal-image {
+        display: block;
+        margin: auto;
+        max-width: 65%;
+        margin-top: 300px;
+        margin-left:  30px;
+        max-height: 65%;
+    }
+    
+    #close-button {
+        position: absolute;
+        transform: translate(-90px,-20px);
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+
+    .see-more {
+        
+        margin-top: 80px;
+       
+
+      }
+
+} 

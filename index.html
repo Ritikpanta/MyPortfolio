@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-----------HOME------------->   
+<div class="header" id="header">
+    <div class="container">
+        <nav>
+           
+            <ul id="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Work</a></li>
+               <li><a href="#">Contact</a></li>
+               <div class="mark"><i class="fa-sharp fa-regular fa-circle-xmark" onclick="close()"></i></div>
+            </ul>
+            <div class="bars"> <i class="fa-solid fa-bars" onclick="open()"></i></div>
+           
+            <div class="logo-container">
+                <img src="images/Logo.png" class="logo" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <div class="headertext">
+        <p>a<span id="typing-text" class="typing-text"></span></p>
+        <h1>Namaskar<br>I'm <span>RITIK PANTA</span> from Nepal</h1>
+    </div>
+
+    <!-----------ABOUT ME------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-colum1">
+                    <img src="images/Portrait.png" alt="">
+                </div>
+                <div class="about-colum2">
+                    <h1 class="Ab" >ABOUT ME</h1>
+                    <p> As a recent high school graduate, I have a strong interest in various fields. 
+                        I possess knowledge of programming languages such as HTML, CSS, JavaScript, C, 
+                        and Python, and I also have a basic understanding of Java and PHP. I am particularly 
+                        fascinated by the field of artificial intelligence, and I am currently studying machine 
+                        learning to further my knowledge. I believe in the importance of adaptability, and I strive
+                        to learn new skills in different areas. Additionally, I am currently exploring graphic design
+                        as another area of interest</p>
+                    <div class="tabtitle">
+                        <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks " onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tabcont active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing the web based interface</li>
+                            <li><span>Ui/Ux</span><br>Designing web/app interfaces</li>
+                            <li><span>Graphics Designing</span><br>Designing poster and logo</li>
+                            <li><span>Content writing</span><br>Blog posting & creative writing</li>
+                        </ul>
+                    </div>
+                    <div class="tabcont" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Graduation from the school</li>
+                            <li><span>2022</span><br>Graduation from C.S major at +2</li>
+                            <li><span>2022</span><br>Graduation from basic-web class</li>
+                            <li><span>2023-current</span><br>Graduating the online courses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------My works------------------------->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="title1">MY WORK</h1>
+            <br> 
+            <div class="buttons">
+                <button class="category-button active" data-category="graphics-designing"  style="color: white;">
+                       Designing Projects
+                  <span class="toggle-icon" style="color: rgb(255, 36, 36);">+</span>
+                </button>
+                <button class="category-button" data-category="web-designing" style="color: white;">
+                  Website Projects
+                  <span class="toggle-icon" style="color: rgb(255, 36, 36);">+</span>
+                </button>
+                <button class="category-button" data-category="python-projects" style="color: white;">
+                  Python Projects
+                  <span class="toggle-icon" style="color: rgb(255, 36, 36);">+</span>
+                </button>
+              </div>
+            <div class="worklist graphics-designing" >
+                <div class="work">
+                    <img src="images/DETECTIVE KONG-1.png" alt="">
+                    <div class="Layer">
+                        <h3>Detective Kong</h3>
+                        <p>This portrait was a random experiment for me to do on the image of AI i.e The kong in the photo 
+                            and somehow I came with the thought of making him as a detective but of Jungle lol
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                <div class="work">
+                    <img src="images/Malai tmy_.png"" alt="">
+                    <div class="Layer">
+                        <h3>Music Poster</h3>
+                        <p>This was the portrait of Music poster which I made for one of my colleague.</p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                <div class="work">
+                    <img src="images/UNSEEN.png" alt="">
+                    <div class="Layer">
+                        <h3>Unseen</h3>
+                        <p>This was one of the first poster I made while experimenting brush and stuff, I kinda made myself as an proragonist here
+                            and added myself with detectives lol. Surely not the best but cool in its own way
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                
+                <div class="work">
+                    <img src="images/Icedteanotag.png" alt="">
+                    <div class="Layer">
+                        <h3>Iced Tea</h3>
+                        <p>Brand type of design to promote Iced of specific cafe , RR cafe is my own hypothetical cafe ;)
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                
+                <div class="work">
+                    <img src="images/FUCOLA.png" alt="">
+                    <div class="Layer">
+                        <h3>Fucola</h3>
+                        <p>Name might be sussy but this design is clean.
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                
+                <div class="work">
+                    <img src="images/Coffee.png" alt="">
+                    <div class="Layer">
+                        <h3>Coffee</h3>
+                        <p>Tried to do advertising desinging using different different kinds of layer.
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                
+                <div class="work">
+                    <img src="images/UTENSILS SALE.png" alt="">
+                    <div class="Layer">
+                        <h3>SALE</h3>
+                        <p>I was experimenting with the sales advertising since it has become more popular 
+                        in ecommerce and digital marketing these days
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                <div class="work">
+                    <img src="images/Dreamteam.png" alt="">
+                    <div class="Layer">
+                        <h3>Dream Team</h3>
+                        <p>This was one of the beautiful protrait I've ever made , from logo to everything</p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+                <div class="work">
+                    <img src="images/Design - 6.png" alt="">
+                    <div class="Layer">
+                        <h3>Yugma</h3>
+                        <p>I tried to design the typography logo of the fashion brand of our Yugma. I was happy  with the result
+                        </p>
+                        <a href="#" class="see-more" onclick="expandImage(event)">Expand</a>
+                    </div>
+                </div>
+                
+                <div id="modal">
+                    <img id="modal-image" src="" alt="">
+                    <span id="close-button">&times;</span>
+                </div>
+                
+            </div>
+            </div>          
+            </div>
+            <div class="worklist web-designing" style="display: none;">
+                <div class="work">
+                    <iframe src="https://ritikpanta.github.io/Tic-Tac-Toe/"></iframe>
+                    <div class="work-info">
+                        <h3>Tic Tac Toe</h3>
+                        <p><a href="https://github.com/Ritikpanta/Tic-Tac-Toe" style="color:rgb(163, 133, 13);">click here for github repo</a> </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <iframe src="https://ritikpanta.github.io/30DaysOfCSS/day2/"></iframe>
+                    <div class="work-info">
+                    <h3><span style="margin: 100px;">Beat</span></h3>
+                    <p><a href="https://github.com/Ritikpanta/30DaysOfCSS" style="color:rgb(163, 133, 13);">click here for github repo</a> </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="worklist python-projects" style="display: none;">
+                <div class="work">
+                    <div class="container-s">
+                        <h3>  GO TO MY GITHUB TO LOOK MY PY PROJECTS CAUSE I DONT KNOW PYTHON HOSTING 
+                        <a href="https://github.com/Ritikpanta?tab=repositories" class="linkh" style="color:aquamarine">Click here</a></h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ---------------For contact me --------------->
+   
+    <script src="script.js"></script>
+</div>
+</div>
+</body>
+</html>
