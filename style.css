@@ -468,7 +468,9 @@ iframe {
   
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 /* ----------For contact me-------------- */
 
@@ -487,86 +489,55 @@ nav .mark{
     }
 
     .headertext {
-        margin-top: 120%;
+        margin-top: 83%;
         margin-left: 2%;
         font-size: 10px;
         margin-bottom: -120px;
     }
+
     .headertext h1 {
         font-size: 23px;
-        display: absolute;
-        white-space: nowrap;
     }
     .headertext p span{
-
         font-size: 60px;
-        font-family: 'Bebas Neue','Courier New', Courier, monospace;
-        color: rgb(255, 177, 33);
     }
     .headertext h1 span{
-        color: #cb0c0c;
         font-size: 35px;
-        font-family: 'Oswald';
-    }
-
-    nav {
-        font-family: 'Francois One', 'Bebas Neue', 'Courier New', Courier, monospace;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin: 0 100px;
     }
     
     .logo-container {
-        position: absolute;
         top: 10px;
         left: 3px;
     }
     
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        list-style-type:none ;
+        padding-top: -3px;
+        margin-top: 12px;
+        transform: translateX(120px);
+        text-decoration: solid;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+    nav ul li a::after {
+        display: none;
+      
+      }
+   
+
     .logo {
         cursor: pointer;
         width: 100px;
     }
-    nav i{ 
-        display: block;
-        font-size: 17px;
-    }
-
-    nav ul{
-        background: rgb(255, 118, 80);
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 150px;
-        height: 100vh;
-        padding: 10px;
-        z-index: 2;
-    }
-    nav .mark{
-        display: block;
-    }
-    nav ul li{
-        display: block;
-        transform: translateY(40px);
-        margin: 30px;
-    }
-
-    nav ul .mark{
-        position: absolute;
-        top : 25px;
-        left: 30px;
-        cursor: pointer;
-    }
-    nav .bars{
-        display: block;
-        margin-left: 80%;
-        transform: translate(60px,16px);
-    }
 
     .about-colum1 img{
-        box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
         width: 300%;
-        border-radius: 10px;
         margin-left: -90px;
     }
     .about-colum2{
@@ -574,17 +545,14 @@ nav .mark{
         margin-top: 30px;
     }
     .about-colum2 .Ab{
-        font-family: 'Open Sans', sans-serif;
         margin-left: 20px;
         font-size: 35px;
     }
     .about-colum2 p{
-        margin-top: 20px;
-        margin-left: 20px;
+
         width: 150%;
         text-align: justify;
         font-size: 13px;
-        font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .about-colum2 .tablinks{
         font-size: 18px;
@@ -593,17 +561,6 @@ nav .mark{
         color: rgb(241, 242, 213);
     
     }
-    .tablinks::after {
-        content: '';
-        width: 0;
-        height: 3px;
-        background: #ff004f;
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        transition: 0.7s;
-      
-      }
     
     .tablinks.active-link::after {
         width: 30%;
@@ -661,15 +618,17 @@ nav .mark{
     }
     
     #modal-image {
+        position: absolute;
         max-width: 65%;
-        margin-top: 300px;
+        margin-top: 600px;
         margin-left:  30px;
         max-height: 65%;
     }
     
     #close-button {
-     
-        transform: translate(-90px,-20px);
+
+        margin-top: 110%;
+        margin-right: 30%;
         font-size: 40px;
         color: white;
         cursor: pointer;
