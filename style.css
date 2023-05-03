@@ -688,3 +688,46 @@ iframe {
 
 
 } 
+
+
+@media only screen and (max-width: 900px)
+{
+    #header{
+        background-image: url(images/PhoneBG-9.png);
+    }
+
+    .headertext {
+        margin-top: 103%;
+        margin-left: 2%;
+        font-size: 10px;
+        margin-bottom: -120px;
+    }
+
+    .headertext h1 {
+        font-size: 23px;
+    }
+    .headertext p span{
+        font-size: 60px;
+    }
+    .headertext h1 span{
+        font-size: 35px;
+    }
+    
+    .logo-container {
+        top: 10px;
+        left: 3px;
+    }
+    
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        list-style-type:none ;
+        padding-top: -3px;
+        margin-top: 10px;
+        transform: translate(120px,-70px);
+        text-decoration: solid;
+    }
+
+
+
+} 
