@@ -489,7 +489,7 @@ nav .mark{
     }
 
     .headertext {
-        margin-top: 83%;
+        margin-top: 110%;
         margin-left: 2%;
         font-size: 10px;
         margin-bottom: -120px;
@@ -511,25 +511,8 @@ nav .mark{
     }
     
     nav ul li{
-        display: flex;
-        justify-content: center;
-        list-style-type:none ;
-        padding-top: -3px;
-        margin-top: 12px;
-        transform: translateX(120px);
-        text-decoration: solid;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 10px;
-    }
-    nav ul li a::after {
         display: none;
-      
-      }
-   
+} 
 
     .logo {
         cursor: pointer;
@@ -690,14 +673,16 @@ iframe {
 } 
 
 
-@media only screen and (max-width: 900px)
+ 
+
+@media only screen and (max-width: 800px)
 {
     #header{
         background-image: url(images/PhoneBG-9.png);
     }
 
     .headertext {
-        margin-top: 103%;
+        margin-top: 123%;
         margin-left: 2%;
         font-size: 10px;
         margin-bottom: -120px;
@@ -713,21 +698,7 @@ iframe {
         font-size: 35px;
     }
     
-    .logo-container {
-        top: 10px;
-        left: 3px;
-    }
-    
     nav ul li{
-        display: flex;
-        justify-content: center;
-        list-style-type:none ;
-        padding-top: -3px;
-        margin-top: 10px;
-        transform: translate(120px,-70px);
-        text-decoration: solid;
-    }
-
-
-
+        display: none;
 } 
+}
