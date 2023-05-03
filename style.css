@@ -155,6 +155,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
     margin-left: 20px;
     width: 82%;
+    text-align: justify;
     font-size: 15px;
     font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -241,13 +242,6 @@ nav ul li a:hover::after {
   }
   
 
-.worklist.web-designing{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-    grid-gap: 30px;
-    margin-top: 50px;
-    
-}
 .title1 { 
     margin-top: -150px;
     font-size: 80px;
@@ -588,11 +582,11 @@ nav .mark{
         margin-top: 20px;
         margin-left: 20px;
         width: 150%;
+        text-align: justify;
         font-size: 13px;
         font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .about-colum2 .tablinks{
-        font-family:IBM Plex Sans Condensed,'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
         position: relative;
         font-weight: bolder;
@@ -617,11 +611,10 @@ nav .mark{
     
     
     .tabcont ul li {
-        list-style: none; 
+        
         margin: 20px;
         width: 300%;
         font-size: 16px;
-        font-family: Helvetica, sans-serif;
     }
     
     
@@ -656,23 +649,11 @@ nav .mark{
         font-family: 'Open Sans', sans-serif;
     }
     .category-button {
-        cursor : pointer;
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding: 0.5rem;
         transform: translateX(50px);
-        border: none;
         border-radius: 5px;
-        background-color: transparent;
-        cursor: pointer;
       }
 
       #modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
         width: 70%;
         height: 100%;
         overflow: hidden;
@@ -680,8 +661,6 @@ nav .mark{
     }
     
     #modal-image {
-        display: block;
-        margin: auto;
         max-width: 65%;
         margin-top: 300px;
         margin-left:  30px;
@@ -689,10 +668,9 @@ nav .mark{
     }
     
     #close-button {
-        position: absolute;
+     
         transform: translate(-90px,-20px);
         font-size: 40px;
-        font-weight: bold;
         color: white;
         cursor: pointer;
     }
@@ -700,8 +678,54 @@ nav .mark{
     .see-more {
         
         margin-top: 80px;
-       
 
       }
+
+      .active {
+        background-color: rgb(57, 57, 57);
+        color: #fff;
+        height: 60px;
+        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+    }
+
+      .worklist.python-projects  .work .container-s{
+         
+        width: 350px;
+        height: 400px;
+
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .container .buttons .category-button .Design{
+        margin-left: 20px;
+    }
+
+  .worklist.web-designing {
+    display: grid;
+    grid-template-columns: repeat(-5, 0fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.worklist.web-designing .work-info h3 {
+    margin: 10;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+.worklist.web-designing .work-info p {
+    cursor: pointer;
+    margin-left: 30px;
+}
+.worklist.web-designing .work-info.Clickhere{
+    cursor: pointer;
+    margin-left: 1000px;
+}
+
+
 
 } 
